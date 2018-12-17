@@ -25,6 +25,7 @@ end
 def find_the_cheese(array)
   # the array below is here to help
   cheese_types = ["cheddar", "gouda", "camembert"]
+<<<<<<< HEAD
   if !array.include?("cheddar" || "gouda" || "camembert")
     
 
@@ -36,5 +37,17 @@ def find_the_cheese(array)
   #   return i.scan("cheddar")
 
   # end
+=======
+  found_cheese = []
+  array.collect do |collect_cheese|
+  if array.include?("cheddar" || "gouda" || "camembert") == true
+      return collect_cheese.scan("cheddar")
+  else
+    puts "found nothing"
+    return nil
+  end
+end
+
+>>>>>>> c143e60a47fe129f44a11c2f8cfe7138c9cb2c22
 end
 end
